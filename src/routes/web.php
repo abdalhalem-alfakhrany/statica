@@ -1,6 +1,5 @@
 <?php
 
-use Fruitcake\LaravelDebugbar\Facades\Debugbar;
 use Illuminate\Support\Facades\Route;
 use Statica\Controllers\SettingsEditorController;
 
@@ -155,7 +154,6 @@ Route::get('cases', function () {
             try {
                 return Blade::render($html);
             } catch (\Throwable $th) {
-                Debugbar::addThrowable($th);
                 return "error in case $index => " . $th->getMessage() . "<br><hr>";
             }
         })

@@ -45,7 +45,6 @@ class SettingsEditorController
 
     public function show(Request $request)
     {
-        Debugbar::disable();
         return view('statica::index', ['content' => $this->settingsService->generateDashboard()]);
     }
 }
