@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+
+@source inline("ml-[{16,32,48,64,80,96,112,128,144}px]");
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    /* main text color */
+    --color-body: var(--color-stone-600);
+    --color-body-subtle: var(--color-stone-500);
+
+    /* text heading colors */
+    --color-heading: var(--color-stone-900);
+
+    /* used for custom brand colors */
+    --color-fg-brand-subtle: var(--color-stone-200);
+    --color-fg-brand: var(--color-stone-950);
+    --color-fg-brand-strong: var(--color-stone-900);
+
+    --font-sans: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-body: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-mono: 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+}
+
+@source "../views/**/*.blade.php";

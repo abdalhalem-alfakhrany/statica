@@ -1,0 +1,22 @@
+{
+    "name": "abdalhalem/statica",
+    "description": "A Laravel package for managing dynamic application settings stored as structured JSON",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Statica\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Statica\\SettingsServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "*"
+    }
+}
