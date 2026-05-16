@@ -43,10 +43,10 @@
             <input type="text" x-model="list[index].label"
                 class="bg-gray-800 text-white border border-default-medium text-xs rounded focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" />
             <button x-on:click="save(index)"
-                class="ml-2 bg-success text-white box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-body leading-5 rounded text-xs px-3 py-1.5 focus:outline-none">@translatable_settings('save')</button>
+                class="ml-2 bg-success text-white box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-body leading-5 rounded text-xs px-3 py-1.5 focus:outline-none">Save</button>
         </div>
     </template>
 
     <button x-show="draggedIndex === null" x-on:click="save()"
-        class="w-fit cursor-pointer mt-2 bg-amber-500 text-white text-xs rounded px-3 py-1.5">@translatable_settings('save_order', ['ar' => 'حفظ الترتيب', 'en' => 'Save Order'])</button>
+        class="w-fit cursor-pointer mt-2 bg-amber-500 text-white text-xs rounded px-3 py-1.5">Save Order</button>
 </div>
